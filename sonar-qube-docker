@@ -1,0 +1,19 @@
+sudo yum install docker -y
+sudo service docker start
+sudo systemctl enable docker
+
+sudo docker images
+sudo docker pull sonarcube
+sudo docker images
+sudo docker run -itd -p 9000:9000 sonarcube OR  sudo docker run -itd --name sonar -p 9000:9000 sonarcube
+sudo docker ps 
+
+access sonarqube server
+http://publicip:9000
+
+if the created container is not running in the browser then use the following
+first check the status 
+
+sudo docker ps 
+if it is exited then run following 
+sudo docker start sonar
