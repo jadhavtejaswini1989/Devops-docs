@@ -3,7 +3,7 @@ sudo service docker start
 sudo systemctl enable docker
 
 sudo docker images
-sudo docker pull sonarcube
+sudo docker pull sonarqube
 sudo docker images
 sudo docker run -itd -p 9000:9000 sonarcube OR  sudo docker run -itd --name sonar -p 9000:9000 sonarcube
 sudo docker ps 
