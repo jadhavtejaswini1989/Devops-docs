@@ -1,3 +1,4 @@
+sudo yum update -y
 sudo yum install -y git aws-cli
 sudo yum install java-17-amazon-corretto
 sudo alternatives --config java
@@ -13,6 +14,7 @@ sudo yum install daemonize -y
 sudo yum install -y jenkins
 sudo service jenkins start
 sudo systemctl enable jenkins
+sudo systemctl status jenkins
 
 Step 3. That’s it! Now you can go to browser and access Jenkins URL http://<instance public ip>:8080 
 Copy password sudo cat /var/lib/jenkins/secrets/initialAdminPassword
